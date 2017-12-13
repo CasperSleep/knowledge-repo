@@ -43,7 +43,6 @@ DB_AUTO_CREATE = True
 # performed using `knowledge_repo --repo <> db_upgrade ...`.
 DB_AUTO_UPGRADE = False
 
-
 # ---------------------------------------------------
 # Authentication configuration
 # ---------------------------------------------------

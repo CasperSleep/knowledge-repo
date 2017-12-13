@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>{% block title %}Knowledge Repo{% endblock %}</title>
+    <title>{% block title %}Dream Atlas{% endblock %}</title>
 
     <!-- js includes at the top as post embedded js colliding -->
     <script src="{{ url_for('static', filename='modules/jquery/jquery.min.js')}}"></script>
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type='text/css' href="{{ url_for('static', filename='css/pages/base.css') }}">
     <link rel="stylesheet" type='text/css' href="{{ url_for('static', filename='modules/select2/css/select2.min.css') }}">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,900|Playfair+Display|Source+Serif+Pro:400,700' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.png') }}"> {% block style_links %}{% endblock %}
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}"> {% block style_links %}{% endblock %}
 
     {% block extra_headers %}
     {% endblock %}
@@ -58,7 +58,8 @@
 
           <!-- Brand name / logo -->
           <a class="navbar-brand" href="/" class="logo-image">
-            <img style='height:100%;' src='{{ url_for("static", filename = "images/logo-white.svg")}}' />
+            Dream Atlas
+            <img style='height:100%;' class="logo" src='{{ url_for("static", filename = "images/sleep-white.png")}}' />
           </a>
         </div>
 
@@ -156,7 +157,7 @@
     </div>
 
     <div class="footer">
-      Served with <span class="glyphicon glyphicon-heart"></span> by <a href="https://github.com/airbnb/knowledge-repo">Knowledge Repo</a> <a {% if version_revision %}title='{{version_revision}}' {% endif %} href="https://github.com/airbnb/knowledge-repo/releases/tag/v{{ version }}">{{ version }}</a>
+      <a href="https://github.com/airbnb/knowledge-repo">Knowledge Repo</a> <a {% if version_revision %}title='{{version_revision}}' {% endif %} href="https://github.com/airbnb/knowledge-repo/releases/tag/v{{ version }}">{{ version }}</a>
       <br />
       <i title="Last checked for updates: {{last_index_check}}">Last indexed: {{last_index}}</i>
     </div>
