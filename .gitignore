@@ -1,3 +1,6 @@
+knowledge_repo/config_defaults.py
+knowledge_repo/config.py
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
